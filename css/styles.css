@@ -1,189 +1,180 @@
-/* * {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    font-size: 12px;
-} */
 :root{
-    --logo-color: #2e2f42;
-    --body-font: Roboto, sans-serif;
-    --navigation: #2e2f42;
-    --botton-bgcolor: #4D5AE5;
-    --botton-font: Roboto, sans-serif;
-    --details-font-color: #2e2f42;
-    --details-p-color: #434455;
+    /* page-colors */
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2e2f42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8e8f99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --modal-overlay: #2E2F42;
+    --hero-background: #2E2F42;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+    /* page -fonts-styles */
+    --roboto-font: Roboto, sans-serif;
+    --raleway-font: Raleway, sans-serif;
+}
+ /* body-default-design */
+body{
+    font-family: var(--roboto-font);
+    color: var(--text);
+    background-color: var(--white-background);
+}
 
-}
-body {
-    font-family: var(--body-font);
-    color: #434455;
-    background-color: #FFFFFF;
-}
-/* style for website logo*/
-.website-logo,
-.footer-logo{
-    font-family: Raleway, sans-serif;
+.website-logo{
+    font-family: var(--raleway-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: var(--primary-brand);
+}
+/* remove text-decoration */
+.link{
     text-decoration: none;
 }
+
 .logo-color{
-    color: var(--logo-color);
+    color: var(--dark);
 }
-/* style for navigation bar*/
-/* remove list style */
-.top-nav > li,
-.contacts > li,
-.contacts-portfolio >li,
-.section-3-list > li,
-.section-4-list > li{
+
+/* navigation-styles */
+.list,
+.address-list{
     list-style: none;
 }
 
-.page-navigation{
+.navigation-link{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--navigation);
-    text-decoration: none;
+    color: var(--dark);
 }
-.page-navigation:hover,
-.page-navigation:focus{
-    color: #404bbf;
+/* navigation-hover & focus */
+.navigation-link:hover{
+    color: var(--pressed-state);
 }
-.contact-link-portfolio{
+.navigation-link:focus{
+    color: var(--pressed-state);
+}
+
+/* address-styles */
+
+.address{
+    font-style: normal;
+}
+.address-links{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    text-decoration: none;
+    color: var(--text);
 }
-.contact-link:hover,
-.contact-link:focus
-.contact-link-portfolio:hover,
-.contact-link-portfolio:focus{
-    color: #404bbf;
+
+/* adress hover & focus */
+.address-links:hover{
+    color: var(--pressed-state);
 }
+.address-links:focus{
+    color: var(--pressed-state);
+}
+
+/* hero section styles */
 .section-1{
-    background-color: #2e2f42;
+    background-color: var(--dark);
 }
-.title-section-1{
+.hero-header{
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-background);
 }
-.order-btn{
-    background-color: var(--botton-bgcolor) ;
-    font-family: var(--body-font);
+/* button styles */
+.order-button{
+    background-color: var(--primary-brand);
+    font-family: inherit;
     font-weight: 500;
-    font: 16px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--white-background);
     cursor: pointer;
 }
-.order-btn:hover,
-.order-btn:focus{
-    background-color: #404bbf;
+/* order button hover & focus */
+.order-button:hover{
+    background-color: var(--pressed-state);
+}
+.order-button:focus{
+    background-color: var(--pressed-state);
 }
 
-/* section 2 */
-/* h3 */
-.details-1,
-.ourteam-definition{
+/* website feature styles */
+.header-3-design{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--details-font-color);
+    color: var(--dark);
 }
-/* p */
-.details-1-definition,
-.ourteam-definition{
+/* feature description */
+.description{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--details-p-color);
-
+    color: var(--text);
 }
-/* section-3 */
-.section-3-header{
+/* section 3 styles */
+.section-3-heading{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2e2f42;
+    color: var(--dark);
 }
+
+/* section 4 styles */
 .section-4{
-    background-color: #f4f4fd;
+    background-color: var(--light);
 }
-.ourteam{
-    background-color: #FFFFFF; 
+/* team list styels */
+.ourteam-image{
+    background-color: var(--white-background);
 }
+
+/* footer */
 .footer{
-    background-color: #2e2f42;
-    text-decoration: none;
+    background-color: var(--dark);
 }
 .logo-color-footer{
-    color: #f4f4fd;
+    color: var(--light);
 }
-.footer-definition{
+.footer-description{
     line-height: 1.5;
-    color: #f4f4fd;
+    color: var(--light);
     letter-spacing: 0.02em;
 }
-.address > ul{
-    font-style: normal;
-}
-.section-1-buttons > ul{
-    list-style: none;
-}
-/* buttons-portfolio */
-.button-portfolio{
-    font-family: var(--botton-font);
+
+/* portfolio */
+
+/* buttons */
+.top-buttons{
+    font-family: var(--roboto-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background-color: #f4f4fd;
-}
-/* button-text-hover-focus */
-.button-portfolio:hover,
-.button-portfolio:focus{
-    color: #FFFFFF;
-}
-/* button-bg-hover-focus */
-.button-portfolio:hover,
-.button-portfolio:focus{
-    background-color: #404bbf;
-}
-.button-portfolio{
+    color: var(--primary-brand);
+    background-color: var(--light);
     cursor: pointer;
 }
-.section-2-images >ul{
-    list-style: none;
-}
-.portfolio-desc{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-.portfolio-content{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing:  0.02em;
-    color: #434455;
-}
-.mediation-app{
-    text-decoration: none;
+
+/* button hover & focus */
+.top-buttons:hover,
+.top-buttons:focus{
+    background-color: var(--pressed-state);
 }
