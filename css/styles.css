@@ -131,8 +131,8 @@ body{
     letter-spacing: 0.02em;
     color: var(--text);
 }
-/* section 3 styles */
-.section-third{
+/* section header styles */
+.section-header{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
