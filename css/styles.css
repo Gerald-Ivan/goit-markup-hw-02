@@ -145,6 +145,9 @@ body{
 .section-four{
     background-color: var(--light);
 }
+.list li{
+    background-color: var(--white-background);
+}
 /* team list styels */
 .ourteam-image{
     background-color: var(--white-background);
