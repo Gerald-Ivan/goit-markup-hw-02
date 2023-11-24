@@ -54,6 +54,10 @@ body{
     letter-spacing: 0.02em;
     color: var(--dark);
 }
+.nav-list{
+    list-style: none;
+
+}
 /* navigation-hover & focus */
 .navigation-link:hover{
     color: var(--pressed-state);
@@ -83,7 +87,7 @@ body{
 }
 
 /* hero section styles */
-.section-1{
+.section-hero{
     background-color: var(--dark);
 }
 .hero-header{
@@ -113,7 +117,7 @@ body{
 }
 
 /* website feature styles */
-.header-3-design{
+.header-design{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -128,7 +132,7 @@ body{
     color: var(--text);
 }
 /* section 3 styles */
-.section-3-heading{
+.section-third{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -138,7 +142,7 @@ body{
 }
 
 /* section 4 styles */
-.section-4{
+.section-four{
     background-color: var(--light);
 }
 /* team list styels */
@@ -148,6 +152,7 @@ body{
 
 /* footer */
 .footer{
+    font-family: var(--raleway-font);
     background-color: var(--dark);
 }
 .logo-color-footer{
@@ -176,5 +181,6 @@ body{
 /* button hover & focus */
 .top-buttons:hover,
 .top-buttons:focus{
+    color: var(--white-background);
     background-color: var(--pressed-state);
 }

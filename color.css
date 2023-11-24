@@ -4,7 +4,7 @@
     --pressed-state: #404BBF;
     --dark: #2e2f42;
     --success: #31D0AA;
-    --text: #434445;
+    --text: #434455;
     --subtle-text: #8e8f99;
     --accent: #E7E9FC;
     --light: #F4F4FD;
@@ -14,5 +14,5 @@
     --modal-background: #FCFCFC;
     /* page -fonts-styles */
     --roboto-font: Roboto, sans-serif;
-    --raleway-font: raleway, sans-serif;
+    --raleway-font: Raleway, sans-serif;
 }
